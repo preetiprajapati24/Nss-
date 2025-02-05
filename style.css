@@ -145,7 +145,7 @@ p {
 }
 
 .logo {
-  width: 90px !important;
+  width: 50px !important;
   margin: 10px !important;
 
 
@@ -236,13 +236,17 @@ font-size: 24px;
    /* NAV BAR Section */
   
    .logo {
-    width: 8%;
-    margin-left: 120px;
+    width: 30px;
+    margin: 5px;
+    margin-left: 10px;
    }
 
    .nav-body {
     background-color: #EDEDFF;
 
+   }
+   .navbar .col-lg-3 {
+    display: contents;
    }
 
    .nav-menu a {
@@ -257,10 +261,16 @@ font-size: 24px;
     padding: .25rem .75rem;
     font-size: 1.25rem;
     line-height: 1;
-    background-color: rgb(37, 4, 168) !important;
-    border: 1px solid rgb(174, 0, 0) !important;
+    background-color: rgb(37 4 168 / 45%) !important;
+    border: 1px solid rgb(37, 4, 168) !important;
+    color: white;
     border-radius: .25rem;
     transition: box-shadow .15s ease-in-out;
+   }
+   .navbar li{
+    padding: 0% 2% 0% 2%;
+    font-size: 15px;
+    
    }
 
 
@@ -383,7 +393,7 @@ margin-top: 10px !important;
 
 /*  ---- Event Section ----- */
 /* General Styles */
-.container {
+.events-section.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -609,7 +619,7 @@ margin-top: 10px !important;
   margin-bottom: 40px;
 }
 
-.container {
+.collaboration.container {
   width: 80%;
 }
 
