@@ -229,7 +229,7 @@ font-size: 24px;
   font-size: 2.2rem;
   padding: 10px;
   margin-top: 5px;
-  margin-left: 10px;
+  
 
 }
 
@@ -237,8 +237,7 @@ font-size: 24px;
   
    .logo {
     width: 30px;
-    margin: 5px;
-    margin-left: 10px;
+    margin: 10px 5px 10px 5px;
    }
 
    .nav-body {
@@ -292,7 +291,6 @@ font-size: 24px;
   font-size: 3.2rem ;
   color: rgb(37, 0, 66);
   font-family: "Hanken Grotesk", serif;
-  padding: 30px;
   margin-top: 7rem !important;
   line-height: 1.5;
 }
@@ -307,7 +305,23 @@ background-color: #EDEDFF;
   font-family: "Hanken Grotesk", serif;
 
 }
+.home-text{
+  /* display: ; */
+  align-items: end;
+}
+.home-btn {
+  padding: 5px 20px;
+  background-color: #64357a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  margin-top: 20px;
+  align-items: center;
 
+}
 .tag {
   font-size: 5rem;
   font-family: "Hanken Grotesk", serif;
@@ -339,17 +353,25 @@ background-color: #EDEDFF;
   color: rgb(255, 255, 255) !important;
   font-size: 1.8rem;
   text-decoration: none;
-
-
-}
-
-.marquee-list a :hover {
-  color: #dddddd !important;
+  
+  
 }
 
 .marquee-list  {
-margin-top: 10px !important;
+  display: flex;
+  align-items: center;
 }
+
+.marquee-list a {
+  color: #ffff00;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.marquee-list a:hover {
+  color: #dddddd !important;
+}
+
 
 
 
@@ -418,7 +440,8 @@ margin-top: 10px !important;
 
 .event-header p {
   color: #555;
-  font-size: 1rem;
+  font-size: 15px;
+
 }
 
 /* Events Section Styles */
@@ -455,13 +478,15 @@ margin-top: 10px !important;
   color: #333;
   margin-top: 10px;
 }
-
+.events-section h1 {
+  margin: 0px;
+  padding: 10px;}
 .events-section h2 {
   padding: 10px;
   /* background-color: #f93465; */
   /* color: white; */
   /* border-radius: 20px; */
-  display: inline;
+
 
   /* text-align: center; */
 }
@@ -1018,7 +1043,7 @@ span.ctm-line {
   font-size: 2.5rem;
 }
 .footer-link li {
-  padding: 10px;
+  padding: 5px;
   color: white;
   font-size: 1.8rem;
 }
