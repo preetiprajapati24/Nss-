@@ -43,8 +43,9 @@ ul {
 }
 html {
   font-size: 62.5%;
-  scroll-behavior: unset !important;
+  scroll-behavior: smooth !important;
   overflow-x: hidden;
+  scroll-padding-top: 110px;
 }
 body {
   top: 0px !important;

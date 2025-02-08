@@ -63,22 +63,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 allnav">
           <li class="nav-item">
-            <a class="nav-link active nav-menu" aria-current="page" href="#">Home</a>
+            <a class="nav-link active nav-menu" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active nav-menu" aria-current="page" href="#about">About</a>
+            <a class="nav-link active nav-menu" aria-current="page" href="index.html#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active nav-menu" aria-current="page" href="blog.html">Blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active nav-menu" aria-current="page" href="#events">Events</a>
+            <a class="nav-link active nav-menu" aria-current="page" href="event_page.html">Events</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active nav-menu" aria-current="page" href="#tours">Notice</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active nav-menu" aria-current="page" href="#contact">Contact</a>
+            <a class="nav-link active nav-menu" aria-current="page" href="index.html#contact">Contact</a>
           </li>
         </ul>
         <div class="search-bar">
@@ -98,7 +98,7 @@
     <!-- <img src="Resources/home-img.jpg" alt=""> -->
      <div>
        <h1>Grand Music Concert 2025 Lorem, ipsum dolor sit amet.</h1>
-       <div style="display: flex; justify-content: space-evenly;">
+       <div class="banner-detail">
          <p><strong>Date of Event:</strong> [Event Date]</p>
          <p><strong>Location:</strong> [Event Location]</p>
          <p><strong>Organized By:</strong> [Organization Name]</p>
@@ -110,40 +110,57 @@
   <div class="report">
 
     <div class="report-navbar">
-      <p>Grand</p>
-      <p>Grand</p>
-      <p>Grand</p>
+      <a href="#event-details">Details</a>
+      <a href="#image">Images</a>
+      <a href="#event-summary">Summary</a>
+      <a href="#key-highlights">Highlights</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#conclusion">Conclusion</a>
     </div>
 
     <div class="report-body">
 
       <div class="report-container">
         <!-- Event Report Header -->
-        <!-- <div class="report-header">
-          
-        </div> -->
-        
-        <!-- Event Image -->
-        
-      
-        <img src="Resources/home-img.jpg" alt="Event Image" class="report-image">
-        <!-- <img src="Resources/event.jpg" alt="Event Image" class="event-image"> -->
+        <div class="report-header">
+          <h1>Grand Music Concert 2025</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nulla</p>
+        </div>
         
         <!-- Event Details Section -->
-      <div class="event-details">
-        <h2>Event Details</h2>
-        <p>[Provide a detailed description of the event here. Include key objectives, activities, and purpose of the event. Highlight any special moments or features of the event.]</p>
-      </div>
-      
+        <div class="event-details" id="event-details">
+          <h2>Event Details</h2>
+          <p>[Provide a detailed description of the event here. Include key objectives, activities, and purpose of the event. Highlight any special moments or features of the event.]</p>
+        </div>
+        
+        <!-- Event Image -->   
+        <div id="image">
+          <h2>Images and Video</h2>
+          <div class="collage-container" >
+            <div class="collage-inner-container">
+              <img src="Resources/home-img.jpg" alt="Image 1" class="image1">
+              <img src="Resources/home-img2.jpg" alt="Image 2" class="image2">
+              <img src="Resources/home-img3.jpg" alt="Image 3" class="image3">
+            </div>
+          </div>
+          
+          <div class="gallery-scroll-container">
+            <img src="Resources/home-img.jpg" alt="Image 1" class="image1">
+            <img src="Resources/home-img2.jpg" alt="Image 2" class="image2">
+            <img src="Resources/home-img3.jpg" alt="Image 3" class="image3">
+            <img src="Resources/home-img4.jpg" alt="Image 4" class="image4">
+          </div>
+        </div>   
+
       <!-- Event Summary Section -->
-      <div class="event-summary">
+      <div class="event-summary" id="event-summary">
         <h2>Event Summary</h2>
         <p>[Summarize the event in brief. Focus on the key highlights, such as the success of the event, attendance numbers, significant moments, or any key speakers or performances.]</p>
       </div>
       
       <!-- Key Metrics Section -->
-      <div class="key-metrics">
-        <h2>Key Metrics</h2>
+      <div class="key-highlights" id="key-highlights">
+        <h2>Key Highlights</h2>
         <ul>
           <li><strong>Attendance:</strong> [Number of attendees]</li>
           <li><strong>Revenue Generated:</strong> $[Amount]</li>
@@ -154,13 +171,13 @@
       </div>
       
       <!-- Event Feedback Section -->
-      <div class="feedback">
+      <div class="feedback" id="feedback">
         <h2>Event Feedback</h2>
         <p>[Provide insights into the feedback received from attendees. Was the event well-received? Include any notable comments, suggestions, or areas for improvement.]</p>
       </div>
       
       <!-- Event Conclusion -->
-      <div class="conclusion">
+      <div class="conclusion" id="conclusion">
         <h2>Conclusion</h2>
         <p>[Summarize the key takeaways from the event, overall impact, and any future steps. You can mention follow-up actions, future events, or plans to improve based on feedback.]</p>
       </div>
