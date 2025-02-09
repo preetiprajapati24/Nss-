@@ -36,7 +36,7 @@ var swiper = new Swiper(".slide-content", {
   });
   
 
-
+// home page event section horizontal scrollbar
   const leftBtn = document.querySelector('.left-btn');
   const rightBtn = document.querySelector('.right-btn');
   const scrollContainer = document.querySelector('.events-scroll-container');
@@ -85,3 +85,23 @@ var swiper = new Swiper(".slide-content", {
       }
   });
   
+// collaboration section infinite scroll
+const scrollers = document.querySelectorAll(".scroller");
+
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    addAnimation();
+}
+
+function addAnimation() {
+    scrollers.forEach((scroller) => {
+        scroller.setAttribute("data-animated", true );
+        const innerScroller = scroller.querySelector(".inner_scroller");
+        const scrollerContent = Array.from(innerScroller.children);
+
+        scrollerContent.forEach((item) => {
+            const duplicateItem = item.cloneNode(true);
+            duplicateItem.setAttribute("aria-hidden", true);
+            innerScroller.appendChild(duplicateItem);
+        })
+    });
+}
