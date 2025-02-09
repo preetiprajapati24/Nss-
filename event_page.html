@@ -8,10 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
   <!-- custom css -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="event_style.css">
   <!-- bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- Bootstrap JS -->
@@ -20,193 +22,17 @@
   <Script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></Script>
   <!-- Tab Icon -->
   <link rel="icon" type="image/x-icon" href="Resources/nss-logo.png">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
 
-    .report-container {
-      width: 100%;
-      padding: 20px 200px;
-      background-color: #fff;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-
-    h1, h2 {
-      color: #333;
-    }
-
-    .report-header p{
-      display: inline;
-      margin-right: 20px;
-    }
-
-    .report-header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    .event-details {
-      margin-bottom: 20px;
-    }
-
-    .event-details p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #555;
-    }
-
-    .event-image {
-      max-width: 20%;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-
-    .event-summary {
-      margin-bottom: 30px;
-    }
-
-    .event-summary h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-
-    .event-summary p {
-      font-size: 1rem;
-      color: #555;
-      line-height: 1.6;
-    }
-
-    .key-metrics {
-      background-color: #f4f4f4;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 30px;
-    }
-
-    .key-metrics h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-
-    .key-metrics ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .key-metrics li {
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
-
-    .feedback {
-      margin-bottom: 20px;
-    }
-
-    .feedback h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-
-    .feedback p {
-      font-size: 1rem;
-      color: #555;
-      line-height: 1.6;
-    }
-
-    .conclusion {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      color: #555;
-    }
-    
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-
-    /* Event Heading Style */
-    .event-heading {
-      text-align: left;
-      padding: 30px 200px;
-      background: linear-gradient(to right, #5747bf, #b3a0f1);
-      color: white;
-
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Event Heading Title */
-    .event-heading h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      position: relative;
-      margin-bottom: 15px;
-      z-index: 2;
-    }
-
-    /* Event Heading Subtitle */
-    .event-heading p {
-      font-size: 1.2rem;
-      color: #f4f4f4;
-      font-weight: 400;
-      z-index: 2;
-      margin: 0%;
-      display: inline;
-      margin-right: 20px;
-      /* margin-bottom: 20px; */
-    }
-
-    /* Fancy Underline Effect for the Title */
-    /* .event-heading h1::after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      width: 70%;
-      height: 4px;
-      background: #fff;
-      transform: translateX(-50%); */
-      /* animation: underline-animation 1.5s ease-in-out infinite; */
-    /* } */
-
-    /* Add a glowing text effect */
-    .event-heading h1 {
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .event-heading h1 {
-        font-size: 2.5rem;
-      }
-
-      .event-heading p {
-        font-size: 1rem;
-      }
-    }
-
-
-    
-    </style>
 </head>
+<body>
 
-<!-- Nab Bar Start Here -->
+  <!-- Nab Bar Start Here -->
 
-<div class=" main-nav-bar">
+  <div class=" main-nav-bar">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="bar-icons">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="bar-icons">
                     <a href="#"> <iconify-icon  icon="mdi:instagram" id="left-icons"></iconify-icon></a> 
                     <a href="#"> <iconify-icon icon="mdi:linkedin" id="left-icons"></iconify-icon></a>
                     <!-- <a href="#"> <iconify-icon icon="mdi:whatsapp" id="left-icons"></iconify-icon></a> -->
@@ -214,124 +40,154 @@
             </div>
             <div class="col-lg-9 contact-bar">
                 <ul>
-                    <li><iconify-icon icon="mdi:call"  class="right-bar-icon"></iconify-icon> +91 9644 283586</li>
-                    <li> <iconify-icon icon="mdi:envelope-outline" class="right-bar-icon"></iconify-icon></iconify-icon><a href=""></a> NSS@gmail.com</li>
+                  <li><iconify-icon icon="mdi:call"  class="right-bar-icon"></iconify-icon> +91 9644 283586</li>
+                  <li> <iconify-icon icon="mdi:envelope-outline" class="right-bar-icon"></iconify-icon><a href=""></a> NSS@gmail.com</li>
                 </ul>
+              </div>
             </div>
-        </div>
-    </div>
-    </div>
-
-    
-<!-- Nav Bar Section -->
-
-
-<nav class="navbar navbar-expand-lg nav-body ">
-    <div class="container">
-    <div class="col-lg-3">
-    <img class='logo' src="Resources/nss-logo.png" alt="Logo" />
-    </div>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <iconify-icon icon="material-symbols:menu" width="24" height="24"></iconify-icon>
-</button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0 allnav">
-        <li class="nav-item">
-        <a class="nav-link active nav-menu" aria-current="page" href="#">Home</a>
-        </li>
-    <li class="nav-item">
-        <a class="nav-link active nav-menu" aria-current="page" href="#about">About</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active nav-menu" aria-current="page" href="blog.html">Blogs</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active nav-menu" aria-current="page" href="#events">Events</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active nav-menu" aria-current="page" href="#tours">Notice</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active nav-menu" aria-current="page" href="#contact">Contact</a>
-    </li>
-    </ul>
-    <div class="search-bar">
-        <div class="input-group">
-            <button  class="btn search-btn" type="button">
-                <a href=""><iconify-icon icon="mdi:magnify" class="search-icon"></iconify-icon></a> 
-            </button>
-          <input type="text" class="form-control search-input" placeholder="Search">
-        </div>
-      </div>
-      
-</div>
-</div>
-</nav>
-
-
-<!-- Line -->
-
-<div class="line"></div>
-
-</head>
-<body>
-    <!-- Event Heading Section -->
-    <div class="event-heading">
-      <h1>Grand Music Concert 2025</h1>
-      <p><strong>Date of Event:</strong> [Event Date]</p>
-      <p><strong>Location:</strong> [Event Location]</p>
-      <p><strong>Organized By:</strong> [Organization Name]</p>
-      
-    </div>
-    
-    <div class="report-container">
-        <!-- Event Report Header -->
-    <div class="report-header">
-      <p><strong>Date of Event:</strong> [Event Date]</p>
-      <p><strong>Location:</strong> [Event Location]</p>
-      <p><strong>Organized By:</strong> [Organization Name]</p>
-    </div>
-
-    <!-- Event Image -->
-    <img src="Resources/event.jpg" alt="Event Image" class="event-image">
-
-    <!-- Event Details Section -->
-    <div class="event-details">
-      <h2>Event Details</h2>
-      <p>[Provide a detailed description of the event here. Include key objectives, activities, and purpose of the event. Highlight any special moments or features of the event.]</p>
-    </div>
-
-    <!-- Event Summary Section -->
-    <div class="event-summary">
-      <h2>Event Summary</h2>
-      <p>[Summarize the event in brief. Focus on the key highlights, such as the success of the event, attendance numbers, significant moments, or any key speakers or performances.]</p>
-    </div>
-
-    <!-- Key Metrics Section -->
-    <div class="key-metrics">
-      <h2>Key Metrics</h2>
-      <ul>
-        <li><strong>Attendance:</strong> [Number of attendees]</li>
-        <li><strong>Revenue Generated:</strong> $[Amount]</li>
-        <li><strong>Social Media Reach:</strong> [Social media stats, e.g., impressions, likes, shares]</li>
-        <li><strong>Event Duration:</strong> [Hours/Days]</li>
-        <li><strong>Notable Speakers/Performers:</strong> [Names]</li>
-      </ul>
-    </div>
-
-    <!-- Event Feedback Section -->
-    <div class="feedback">
-      <h2>Event Feedback</h2>
-      <p>[Provide insights into the feedback received from attendees. Was the event well-received? Include any notable comments, suggestions, or areas for improvement.]</p>
-    </div>
-
-    <!-- Event Conclusion -->
-    <div class="conclusion">
-      <h2>Conclusion</h2>
-      <p>[Summarize the key takeaways from the event, overall impact, and any future steps. You can mention follow-up actions, future events, or plans to improve based on feedback.]</p>
-    </div>
+          </div>
   </div>
 
+    
+  <!-- Nav Bar Section -->
+
+
+  <nav class="navbar navbar-expand-lg nav-body ">
+    <div class="container">
+      <div class="col-lg-3">
+        <img class='logo' src="Resources/nss-logo.png" alt="Logo" />
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <iconify-icon icon="material-symbols:menu" width="24" height="24"></iconify-icon>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 allnav">
+          <li class="nav-item">
+            <a class="nav-link active nav-menu" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-menu" aria-current="page" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-menu" aria-current="page" href="blog.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-menu" aria-current="page" href="event_page.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-menu" aria-current="page" href="#tours">Notice</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-menu" aria-current="page" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="search-bar">
+          <div class="input-group">
+            <button  class="btn search-btn" type="button">
+              <a href=""><iconify-icon icon="mdi:magnify" class="search-icon"></iconify-icon></a> 
+            </button>
+            <input type="text" class="form-control search-input" placeholder="Search">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+  
+  <div class="banner">
+    <!-- <img src="Resources/home-img.jpg" alt=""> -->
+     <div>
+       <h1>Grand Music Concert 2025 Lorem, ipsum dolor sit amet.</h1>
+       <div class="banner-detail">
+         <p><strong>Date of Event:</strong> [Event Date]</p>
+         <p><strong>Location:</strong> [Event Location]</p>
+         <p><strong>Organized By:</strong> [Organization Name]</p>
+        </div>
+      </div>
+  </div>
+
+  <!-- Event Section -->
+  <div class="report">
+
+    <div class="report-navbar">
+      <a href="#event-details">Details</a>
+      <a href="#image">Images</a>
+      <a href="#event-summary">Summary</a>
+      <a href="#key-highlights">Highlights</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#conclusion">Conclusion</a>
+    </div>
+
+    <div class="report-body">
+
+      <div class="report-container">
+        <!-- Event Report Header -->
+        <div class="report-header">
+          <h1>Grand Music Concert 2025</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nulla</p>
+        </div>
+        
+        <!-- Event Details Section -->
+        <div class="event-details" id="event-details">
+          <h2>Event Details</h2>
+          <p>[Provide a detailed description of the event here. Include key objectives, activities, and purpose of the event. Highlight any special moments or features of the event.]</p>
+        </div>
+        
+        <!-- Event Image -->   
+        <div id="image">
+          <h2>Images and Video</h2>
+          <div class="collage-container" >
+            <div class="collage-inner-container">
+              <img src="Resources/home-img.jpg" alt="Image 1" class="image1">
+              <img src="Resources/home-img2.jpg" alt="Image 2" class="image2">
+              <img src="Resources/home-img3.jpg" alt="Image 3" class="image3">
+            </div>
+          </div>
+          
+          <div class="gallery-scroll-container">
+            <img src="Resources/home-img.jpg" alt="Image 1" class="image1">
+            <img src="Resources/home-img2.jpg" alt="Image 2" class="image2">
+            <img src="Resources/home-img3.jpg" alt="Image 3" class="image3">
+            <img src="Resources/home-img4.jpg" alt="Image 4" class="image4">
+          </div>
+        </div>   
+
+      <!-- Event Summary Section -->
+      <div class="event-summary" id="event-summary">
+        <h2>Event Summary</h2>
+        <p>[Summarize the event in brief. Focus on the key highlights, such as the success of the event, attendance numbers, significant moments, or any key speakers or performances.]</p>
+      </div>
+      
+      <!-- Key Metrics Section -->
+      <div class="key-highlights" id="key-highlights">
+        <h2>Key Highlights</h2>
+        <ul>
+          <li><strong>Attendance:</strong> [Number of attendees]</li>
+          <li><strong>Revenue Generated:</strong> $[Amount]</li>
+          <li><strong>Social Media Reach:</strong> [Social media stats, e.g., impressions, likes, shares]</li>
+          <li><strong>Event Duration:</strong> [Hours/Days]</li>
+          <li><strong>Notable Speakers/Performers:</strong> [Names]</li>
+        </ul>
+      </div>
+      
+      <!-- Event Feedback Section -->
+      <div class="feedback" id="feedback">
+        <h2>Event Feedback</h2>
+        <p>[Provide insights into the feedback received from attendees. Was the event well-received? Include any notable comments, suggestions, or areas for improvement.]</p>
+      </div>
+      
+      <!-- Event Conclusion -->
+      <div class="conclusion" id="conclusion">
+        <h2>Conclusion</h2>
+        <p>[Summarize the key takeaways from the event, overall impact, and any future steps. You can mention follow-up actions, future events, or plans to improve based on feedback.]</p>
+      </div>
+      </div>
+      <div class="side-column">
+        
+      </div>
+    </div>
+    </div>
+  </div>
 
 </body>
 </html>
