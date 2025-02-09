@@ -331,6 +331,12 @@ p {
   color: #db1f2c;
 }
 
+@media (max-width: 992px){
+  .home-section .row {
+    flex-direction: column-reverse;
+  }
+}
+
 /* Notices Section */
 
 .notice-bar-body {
