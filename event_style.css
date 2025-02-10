@@ -1,5 +1,6 @@
 :root{
   --collage-gap:10px;
+  scroll-padding-top: 110px;
 }
 body {
   font-family: Arial, sans-serif;
