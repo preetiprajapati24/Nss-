@@ -36,55 +36,78 @@ var swiper = new Swiper(".slide-content", {
   });
   
 
+
+
+  
 // home page event section horizontal scrollbar
-  const leftBtn = document.querySelector('.left-btn');
-  const rightBtn = document.querySelector('.right-btn');
-  const scrollContainer = document.querySelector('.events-scroll-container');
-  
-  // Function to handle scrolling left
-  leftBtn.addEventListener('click', () => {
-      scrollContainer.scrollBy({
-          left: -300, // Scroll left by 300px
-          behavior: 'smooth',
-      });
-  });
-  
-  // Function to handle scrolling right
-  rightBtn.addEventListener('click', () => {
-      scrollContainer.scrollBy({
-          left: 300, // Scroll right by 300px
-          behavior: 'smooth',
-      });
-  });
-  
-  // Function to update button visibility based on scroll position
-  scrollContainer.addEventListener('scroll', () => {
-      // Hide left button when at the start
-      if (scrollContainer.scrollLeft <= 0) {
-          leftBtn.style.display = 'none'; // Hide the left button
-      } else {
-          leftBtn.style.display = 'block'; // Show the left button
-      }
-  
-      // Hide right button when at the end
-      if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
-          rightBtn.style.display = 'none'; // Hide the right button
-      } else {
-          rightBtn.style.display = 'block'; // Show the right button
-      }
-  });
-  
-  // Initial check to hide/show buttons when page is loaded
-  window.addEventListener('load', () => {
-      if (scrollContainer.scrollLeft <= 0) {
-          leftBtn.style.display = 'none'; // Hide the left button
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Select all left and right buttons
+    const leftBtns = document.querySelectorAll('.left-btn');
+    const rightBtns = document.querySelectorAll('.right-btn');
+    const scrollContainers = document.querySelectorAll('.events-scroll-container');
+    
+    // Function to check the visibility of buttons
+    const updateButtonVisibility = (containerId) => {
+        const container = document.getElementById(containerId);
+        const leftBtn = document.querySelector(`.left-btn[data-target="${containerId}"]`);
+        const rightBtn = document.querySelector(`.right-btn[data-target="${containerId}"]`);
+        
+        // Check if the container is scrolled to the left
+        if (container.scrollLeft === 0) {
+            leftBtn.style.visibility = 'hidden';  // Hide left button
+        } else {
+            leftBtn.style.visibility = 'visible';  // Show left button
         }
         
-        if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
-        rightBtn.style.display = 'none'; // Hide the right button
-      }
-  });
-  
+        // Check if the container is scrolled to the right
+        if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+            rightBtn.style.visibility = 'hidden';  // Hide right button
+        } else {
+            rightBtn.style.visibility = 'visible';  // Show right button
+        }
+    };
+
+    // Initial check for button visibility
+    scrollContainers.forEach(container => {
+        updateButtonVisibility(container.id);  // Initial button visibility update
+    });
+
+    // Add event listeners for left buttons
+    leftBtns.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetId = button.getAttribute('data-target');
+            const scrollContainer = document.getElementById(targetId);
+            scrollContainer.scrollBy({
+                left: -300, // Scroll left by 300px
+                behavior: 'smooth',
+            });
+        });
+    });
+
+    // Add event listeners for right buttons
+    rightBtns.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetId = button.getAttribute('data-target');
+            const scrollContainer = document.getElementById(targetId);
+            scrollContainer.scrollBy({
+                left: 300, // Scroll right by 300px
+                behavior: 'smooth',
+            });
+        });
+    });
+
+    // Listen for scroll events to update button visibility
+    scrollContainers.forEach(container => {
+        container.addEventListener('scroll', () => {
+            updateButtonVisibility(container.id);  // Update button visibility on scroll
+        });
+    });
+});
+
+
+
+
 // collaboration section infinite scroll
 const scrollers = document.querySelectorAll(".scroller");
 

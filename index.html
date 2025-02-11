@@ -105,14 +105,14 @@
 <div class="home-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 home-text">
+            <div class="col-lg-6 home-text">
                 <h1> At NSS ADGIPS, our mission is to empower students to make a meaningful impact in society. Together, let's build a compassionate, socially responsible, and impactful community. </h1>
                 <button class="home-btn" role="button"> <iconify-icon icon="mdi:arrow-right-thin" class="icons"></iconify-icon>Explore</button>
             </div>
 
 
 
-        <div class="col-lg-5">
+        <div class="col-lg-6">
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -168,7 +168,7 @@
                 <br> <br>
                 Welcome to the official website of the <b>National Service Scheme (NSS)</b> at <b>Dr. Akhilesh Das Gupta Institiue of Professional Studies (ADGIPS)</b>. We are excited to share our journey of service, leadership, and community engagement with you. At NSS ADGIPS, our mission is to empower students to make a meaningful impact in society, embracing our motto, "Not Me, But You." This guiding principle fuels our commitment to volunteerism and inspires us to contribute positively to our communities. 
                 
-                Whether you're an active volunteer, a prospective member, or someone simply interested in learning more about our work, we invite you to explore our website. Here, you'll find information about our projects, upcoming events, and countless opportunities to get involved. Join us as we work together to create positive change, grow as leaders, and inspire one another. <br> <br>
+                Whether you're an active volunteer, a prospective member, or someone simply interested in learning more about our work, we invite you to explore our website. Here, you'll find information about our projects, upcoming events, and countless opportunities to get involved. Join us as we work together to create positive change, grow as leaders, and inspire one another.
                </h2>
         </div>
     </div>
@@ -197,7 +197,7 @@
 <!--  Event section Start Here -->
 
 <div class="events-section">
-    <div class="container">
+    <section class="container">
         <div class="row">
             <div class="col-12 event-header"> 
                 <h1>Event Section</h1>
@@ -205,91 +205,111 @@
                 <p>Explore our Upcoming and Past Events to stay connected with the vibrant campus life. Don’t miss out on exciting opportunities to engage, learn, and grow!</p>
             </div>
         </div>
-    </div>
+    </section>
   
-    <div class="container">
+    <section class="container">
 
         <h2>Upcomming Event</h2>
 
         <div class="events-scroll-wrapper upcoming">
-            <button class="scroll-btn left-btn"> &#10094;</button>
-            <div class="events-scroll-container">
+            <button class="scroll-btn left-btn" data-target="event-scroller1"> &#10094;</button>
+            <div class="events-scroll-container" id="event-scroller1">
                 <div class="row">
-                    <div class="col">
-                        <img src="Resources/event_poster/Ignite25.jpg" alt="Poster">
-                        <h4>National Youth Festival</h4>
-                        <h6>Feb 2025</h6>
+                    <div class="event-card">
+                        <a href="event_page.html">
+                            <img src="Resources/event_poster/Ignite25.jpg" alt="Poster">
+                            <h4>National Youth Festival</h4>
+                            <h6>Feb 2025</h6>
+                        </a>
                     </div>
                     
                 </div>
             </div>
-            <button class="scroll-btn right-btn">&#10095;</button>
+            <button class="scroll-btn right-btn" data-target="event-scroller1">&#10095;</button>
             </div>
 
             <h2>Former Events</h2>
 
             <div class="events-scroll-wrapper Previous">
-            <button class="scroll-btn left-btn"> &#10094;</button>
-            <div class="events-scroll-container">
+            <button class="scroll-btn left-btn" data-target="event-scroller2"> &#10094;</button>
+            <div class="events-scroll-container" id="event-scroller2">
                 <div class="row">
-                    <div class="col">
+                    <div class="event-card">
                         <a href="event_page.html">
                             <img src="Resources/event_poster/National Youth.jpg" alt="Poster">
                             <h4>National Youth Festival</h4>
                             <h6>10th - 12th Jan 2025</h6>
                         </a>
                     </div>
-                    <div class="col">
-                        <img src="Resources/event_poster/Jan Jatiya Gaurav.jpg" alt="Poster">
-                        <h4>Jan Jatiya Gaurav Divas</h4>
-                        <h6>15th - 26th Nov, 2024</h6>
+                    <div class="event-card">
+                        <a href="event_page.html">
+                            <img src="Resources/event_poster/Jan Jatiya Gaurav.jpg" alt="Poster">
+                            <h4>Jan Jatiya Gaurav Divas</h4>
+                            <h6>15th - 26th Nov, 2024</h6>
+                        </a>
                     </div>
-                    <div class="col">
-                        <img src="Resources/event_poster/Learning of tribal.jpg" alt="Poster">
-                        <h4>Learning of Tribal Language & Ways Of Life</h4>
-                        <h6>26th Nov, 2024</h6>
+                    <div class="event-card">
+                        <a href="event_page.html">
+                            <img src="Resources/event_poster/Learning of tribal.jpg" alt="Poster">
+                            <h4>Learning of Tribal Language & Ways Of Life</h4>
+                            <h6>26th Nov, 2024</h6>
+                        </a>
                     </div>
-                    <div class="col">
-                        <img src="Resources/event_poster/Poetry Competition.jpg" alt="Poster">
-                        <h4>Poetry Competition On Tribal Culture</h4>
-                        <h6>26th Nov, 2024</h6>
+                    <div class="event-card">
+                        <a href="event_page.html">
+                            <img src="Resources/event_poster/Poetry Competition.jpg" alt="Poster">
+                            <h4>Poetry Competition On Tribal Culture</h4>
+                            <h6>26th Nov, 2024</h6>
+                        </a>
                     </div>
-                    <div class="col">
-                        <img src="Resources/event_poster/Quiz Competion.jpg" alt="Poster">
-                        <h4>Quiz Competition On Tribal Culture</h4>
-                        <h6>26th Nov, 2024</h6>
+                    <div class="event-card">
+                        <a href="event_page.html">
+                            <img src="Resources/event_poster/Quiz Competion.jpg" alt="Poster">
+                            <h4>Quiz Competition On Tribal Culture</h4>
+                            <h6>26th Nov, 2024</h6>
+                        </a>
                     </div>
-                    <div class="col">
-                        <img src="Resources/event_poster/short write ups competition.jpg" alt="Poster">
-                        <h4>Short Write Ups Competition</h4>
-                        <h6>21th Nov, 2024</h6>
+                    <div class="event-card">
+                        <a href="event_page.html">
+                            <img src="Resources/event_poster/short write ups competition.jpg" alt="Poster">
+                            <h4>Short Write Ups Competition</h4>
+                            <h6>21th Nov, 2024</h6>
+                        </a>
                     </div>
-                    <div class="col">
-                        <img src="Resources/event_poster/NIC Camp.jpg" alt="Poster">
-                        <h4>National Integration Camp, NSS Title</h4>
-                        <h6>12th - 18th Nov, 2024</h6>
+                    <div class="event-card">
+                        <a href="event_page.html">
+                            <img src="Resources/event_poster/NIC Camp.jpg" alt="Poster">
+                            <h4>National Integration Camp, NSS Title</h4>
+                            <h6>12th - 18th Nov, 2024</h6>
+                        </a>
                     </div>
-                    <div class="col">
-                        <img src="Resources/event_poster/Swachta Run.jpg" alt="Poster">
-                        <h4>Swachta Run</h4>
-                        <h6>24th Oct, 2024</h6>
+                    <div class="event-card">
+                        <a href="event_page.html">
+                            <img src="Resources/event_poster/Swachta Run.jpg" alt="Poster">
+                            <h4>Swachta Run</h4>
+                            <h6>24th Oct, 2024</h6>
+                        </a>
                     </div>
-                    <div class="col">
-                        <img src="Resources/event_poster/Poster.jpg" alt="Poster">
-                        <h4>Poster Making Competition</h4>
-                        <h6>21st Oct, 24</h6>
+                    <div class="event-card">
+                        <a href="event_page.html">
+                            <img src="Resources/event_poster/Poster.jpg" alt="Poster">
+                            <h4>Poster Making Competition</h4>
+                            <h6>21st Oct, 24</h6>
+                        </a>
                     </div>  
-                    <div class="col">
-                        <img src="Resources/event_poster/Rakshin.jpg" alt="Poster">
-                        <h4>Together For Change, The Rakshin Project</h4>
-                        <h6>24th Sep, 2024</h6>
+                    <div class="event-card">
+                        <a href="event_page.html">
+                            <img src="Resources/event_poster/Rakshin.jpg" alt="Poster">
+                            <h4>Together For Change, The Rakshin Project</h4>
+                            <h6>24th Sep, 2024</h6>
+                        </a>
                     </div>
                 </div>
             </div>
-            <button class="scroll-btn right-btn">&#10095;</button>
+            <button class="scroll-btn right-btn" data-target="event-scroller2">&#10095;</button>
         </div>
         <button class="read-more">Read More</button>
-    </div>
+    </section>
 </div>
   
 <div class="line"></div>
@@ -640,16 +660,16 @@
 
 
 
+    </body>
+    
+    <!-- font awsome icon kit -->
+    <script src="https://kit.fontawesome.com/76fc65f778.js" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+    
+    <!-- JavaScript -->
+    <!--Uncomment this line-->
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
+    <script src="function.js"></script>
 
-</body>
-
-<!-- font awsome icon kit -->
-<script src="https://kit.fontawesome.com/76fc65f778.js" crossorigin="anonymous"></script>
-<!-- Swiper JS -->
-<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
-
-<!-- JavaScript -->
-  <!--Uncomment this line-->
-<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
-<script src="function.js"></script>
 </html>
